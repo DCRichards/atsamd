@@ -15,7 +15,7 @@ version = "0.7"
 optional = true
 
 [dependencies.atsamd-hal]
-version = "0.14"
+version = "0.23"
 default-features = false
 
 [dependencies.usb-device]
@@ -41,8 +41,8 @@ ssd1306 = { version = "0.7", features = ["graphics"] }
 default = ["rt", "atsamd-hal/samd21g"]
 rt = ["cortex-m-rt", "atsamd-hal/samd21g-rt"]
 usb = ["atsamd-hal/usb", "usb-device"]
-unproven = ["atsamd-hal/unproven"]
 use_semihosting = []
+async = ["atsamd-hal/async"]
 
 # for cargo flash
 [package.metadata]
